@@ -1,9 +1,0 @@
-<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="300" fill="#FFFBEB"/>
-  <circle cx="200" cy="120" r="50" fill="#F59E0B" fill-opacity="0.2"/>
-  <path d="M180 120L195 135L220 100" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="110" y="200" font-family="serif" font-size="24" fill="#78350F" font-weight="bold">Hope Foundation</text>
-  <rect x="140" y="220" width="120" height="30" rx="15" fill="#D97706"/>
-  <text x="175" y="240" font-family="sans-serif" font-size="12" fill="white">Donate Now</text>
-  <text x="135" y="280" font-family="sans-serif" font-size="12" fill="#92400E">NGO Landing Page</text>
-</svg>
