@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>RudraEdge - Freelance Services</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-body text-gray-800 dark:text-gray-100 transition-colors duration-300">
+    <div
+        class="relative w-full min-h-screen bg-gradient-to-br from-[#209499] to-[#0F5F64] dark:from-[#0D383A] dark:to-[#051F21] overflow-x-hidden">
+        <div class="absolute inset-0 bg-hero-pattern bg-[length:60px_60px] pointer-events-none"></div>
+        <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+            <div class="container mx-auto px-4 py-4 flex items-center justify-between transition-all duration-300">
+                <div class="flex items-center gap-2">
+                    <img src="assets/images/logo.svg" alt="RudraEdge Logo"
+                        class="w-10 h-10 object-contain hover:rotate-12 transition-transform duration-300">
+                    <span class="text-white text-2xl font-display font-semibold tracking-wide">RudraEdge</span>
+                </div>
+                <div class="hidden md:flex items-center gap-6 text-white/90 text-sm font-medium">
+                    <a class="relative after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1/2 after:h-0.5 after:bg-primary transition-all hover:text-white"
+                        href="#">Home</a>
+                    <a class="hover:text-primary transition-colors" href="#">Programs</a>
+                    <a class="hover:text-primary transition-colors" href="#">Mentors</a>
+                    <a class="hover:text-primary transition-colors" href="#">Pricing</a>
+                    <a class="hover:text-primary transition-colors" href="#">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white hover:text-primary transition-colors">
+                    <span class="material-icons-round text-3xl">menu</span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="fixed inset-0 z-40 bg-[#0F5F64] transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-8">
+                <button id="close-menu-btn"
+                    class="absolute top-6 right-6 text-white hover:text-primary transition-colors">
+                    <span class="material-icons-round text-4xl">close</span>
+                </button>
+                <a class="text-2xl text-white font-semibold hover:text-primary transition-colors" href="#">Home</a>
+                <a class="text-2xl text-white font-semibold hover:text-primary transition-colors" href="#">Programs</a>
+                <a class="text-2xl text-white font-semibold hover:text-primary transition-colors" href="#">Mentors</a>
+                <a class="text-2xl text-white font-semibold hover:text-primary transition-colors" href="#">Pricing</a>
+                <a class="text-2xl text-white font-semibold hover:text-primary transition-colors" href="#">Contact</a>
+            </div>
+        </nav>
+        <main class="relative z-10 container mx-auto px-4 pt-8 lg:pt-12 pb-24">
+            <div class="grid lg:grid-cols-2 gap-8 items-center">
+                <div class="max-w-2xl">
+                    <span class="inline-block text-white/80 text-base mb-4 tracking-wide font-medium">Your Trusted
+                        Freelance Partner</span>
+                    <h1 class="text-4xl lg:text-5xl leading-tight font-display font-semibold text-white mb-4">
+                        Quality Services for Your <span class="text-primary">Business Growth</span>
+                    </h1>
+                    <p class="text-white/80 text-base leading-relaxed mb-6 max-w-lg font-light">
+                        Led by <span class="text-white font-semibold">Kamlesh Suryavanshi</span>, we deliver superior
+                        <span class="text-teal-200 font-medium">Web Development</span>, <span
+                            class="text-teal-200 font-medium">Designing</span>, <span
+                            class="text-teal-200 font-medium">Data Analysis</span>, and <span
+                            class="text-teal-200 font-medium">Administrative Support</span> to fuel your business
+                        growth.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-8">
+                        <button
+                            class="bg-primary hover:bg-primary-hover text-gray-900 font-bold px-6 py-3 rounded-full transition-all transform hover:-translate-y-1">
+                            Get Started Now
+                        </button>
+                        <div class="flex items-center gap-4">
+                            <div class="flex -space-x-3">
+                                <img alt="Student" class="w-12 h-12 rounded-full border-2 border-[#186F74] object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbwqfRRMIc5GdoCWfzgMsnll1e5bvnmwPEQsZsUynzqhQfF18s_CjuKH8BXYHWiSP2hN8OyH9fLCUqXzWnFTJ2syg4rFVpLhsAqkXPddHj-DeUBoS3wyUJnRdHH3Q3E6fGtniP8ZHPKcx3OIrF1aUAIAq2dnyyli_slHllWNMVy8ZfJPPmJ8nvPnI8fqo7-6czQvr4m4lCOHgqf4-USYerrZIGE8VtcFdhxn9du3bbupBzXcX6BpbkIEs9OSp01OrOcJw9yxyDNMc" />
+                                <img alt="Student" class="w-12 h-12 rounded-full border-2 border-[#186F74] object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2AHiuWQKbyLqJ4a-E5Owg-0wpgOCJLsYf-MkLfeBQMqJALhwEc-Jr5wWAs62cvSZmmNJygFYsozJjwhgVfpGs8O3pPqhvdZbAgFT3kIabV-7T67AA6_vrOx6D73qPzNr46kzpqbe7b6tq5vWWoCzokCj8I8FQo5SfnHRNt8DnvKbAPQxHwuN2nb3GC-c2RJmQTg5tJsucCWwNi9hLpCnrZNX4LEorfNWUi7f06RT0-TzNbJGdC8YZeH3RC2o4T21vOysbYGyu7Ng" />
+                                <div
+                                    class="w-12 h-12 rounded-full border-2 border-[#186F74] bg-gray-900 flex flex-col items-center justify-center text-white text-[10px] leading-tight">
+                                    <span class="text-sm font-bold text-primary">4.8</span>
+                                    <span class="text-[8px] text-yellow-400">★</span>
+                                </div>
+                            </div>
+                            <div class="text-white">
+                                <p class="text-sm font-semibold">Student Review</p>
+                                <p class="text-xs text-white/60">Based on more than 10,000 feedbacks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative h-[400px] lg:h-[480px] flex items-end justify-center">
+                    <img alt="Happy student with backpack"
+                        class="relative z-10 h-full w-auto object-cover object-bottom rounded-3xl lg:rounded-none lg:bg-transparent lg:mask-none"
+                        src="assets/images/hero.svg" />
+                    <div class="absolute top-12 right-8 lg:right-16 z-20 glass-card p-3 rounded-xl flex items-center gap-3 animate-bounce"
+                        style="animation-duration: 3s;">
+                        <div class="p-2 bg-white/20 rounded-lg">
+                            <span class="material-icons-round text-white text-lg">code</span>
+                        </div>
+                        <div>
+                            <p class="text-white/60 text-[10px] font-medium">Projects Done</p>
+                            <p class="text-white font-bold text-base">500+</p>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-32 right-8 lg:right-20 z-20 glass-card p-3 rounded-xl flex items-center gap-3 animate-bounce"
+                        style="animation-duration: 4s;">
+                        <div class="p-2 bg-white/20 rounded-lg relative">
+                            <span class="material-icons-round text-white text-lg">verified</span>
+                            <span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+                        </div>
+                        <div>
+                            <p class="text-white/60 text-[10px] font-medium">Expert Experts</p>
+                            <p class="text-white font-bold text-base">50+</p>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-16 left-8 lg:left-20 z-20 glass-card p-3 rounded-xl flex items-center gap-3 animate-bounce"
+                        style="animation-duration: 3.5s;">
+                        <div class="p-2 bg-white/20 rounded-lg">
+                            <span class="material-icons-round text-white text-lg">emoji_emotions</span>
+                        </div>
+                        <div>
+                            <p class="text-white/60 text-[10px] font-medium">Happy Clients</p>
+                            <p class="text-white font-bold text-base">200+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="relative z-30 container mx-auto px-4 -mt-24 pb-12">
+            <div id="features-grid" class="bg-white dark:bg-slate-800 rounded-2xl p-6 lg:p-8">
+                <!-- Header Section -->
+                <div class="mb-8 text-left">
+                    <span
+                        class="inline-block text-teal-600 font-display font-bold text-xs tracking-widest uppercase mb-2">Our
+                        Capabilities</span>
+                    <h2 class="text-2xl lg:text-3xl font-display font-bold text-gray-900 dark:text-white mb-3">
+                        Services We Provide
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                        At RudraEdge, we offer specialized freelance services to elevate your business operations and
+                        digital presence.
+                    </p>
+                </div>
+
+                <!-- Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Box 1 -->
+                    <div class="feature-card p-4 rounded-xl transition-all duration-300 cursor-pointer group">
+                        <div
+                            class="icon-container w-10 h-10 rounded-lg flex items-center justify-center mb-3 transition-colors">
+                            <span class="material-icons-round text-xl transition-colors">code</span>
+                        </div>
+                        <h3 class="card-title text-base font-bold mb-1 transition-colors">Web Development</h3>
+                        <p class="card-desc text-xs leading-relaxed transition-colors">
+                            Building responsive, high-performance websites and web applications tailored to your needs.
+                        </p>
+                    </div>
+                    <!-- Box 2 -->
+                    <div class="feature-card p-4 rounded-xl transition-all duration-300 cursor-pointer group">
+                        <div
+                            class="icon-container w-10 h-10 rounded-lg flex items-center justify-center mb-3 transition-colors">
+                            <span class="material-icons-round text-xl transition-colors">brush</span>
+                        </div>
+                        <h3 class="card-title text-base font-bold mb-1 transition-colors">Designing</h3>
+                        <p class="card-desc text-xs leading-relaxed transition-colors">
+                            Creative graphic and UI/UX solutions to make your brand visually stunning and impactful.
+                        </p>
+                    </div>
+                    <!-- Box 3 -->
+                    <div class="feature-card p-4 rounded-xl transition-all duration-300 cursor-pointer group">
+                        <div
+                            class="icon-container w-10 h-10 rounded-lg flex items-center justify-center mb-3 transition-colors">
+                            <span class="material-icons-round text-xl transition-colors">analytics</span>
+                        </div>
+                        <h3 class="card-title text-base font-bold mb-1 transition-colors">Data Services</h3>
+                        <p class="card-desc text-xs leading-relaxed transition-colors">
+                            Accurate data entry and in-depth data analysis to support your business decisions.
+                        </p>
+                    </div>
+                    <!-- Box 4 -->
+                    <div class="feature-card p-4 rounded-xl transition-all duration-300 cursor-pointer group">
+                        <div
+                            class="icon-container w-10 h-10 rounded-lg flex items-center justify-center mb-3 transition-colors">
+                            <span class="material-icons-round text-xl transition-colors">support_agent</span>
+                        </div>
+                        <h3 class="card-title text-base font-bold mb-1 transition-colors">Admin & Support</h3>
+                        <p class="card-desc text-xs leading-relaxed transition-colors">
+                            Reliable virtual assistance and administrative support to streamline your daily tasks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Education Section (Full Width) -->
+        <div
+            class="relative w-full pt-20 pb-24 bg-gradient-to-br from-[#209499] to-[#0F5F64] dark:from-[#0D383A] dark:to-[#051F21] overflow-hidden">
+            <div class="absolute inset-0 bg-hero-pattern bg-[length:60px_60px] pointer-events-none"></div>
+            <div class="relative z-10 container mx-auto px-4">
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <!-- Column 1: Image (Left) -->
+                    <div class="relative h-[400px] lg:h-[500px] flex items-end justify-center order-2 lg:order-1">
+                        <img alt="My Education"
+                            class="relative z-10 h-full w-auto object-cover object-bottom rounded-3xl lg:bg-transparent"
+                            src="assets/images/education.svg" />
+                        <!-- Floating cards kept for consistency -->
+                        <div class="absolute top-8 left-6 z-20 glass-card p-2 rounded-lg flex items-center gap-2 animate-bounce"
+                            style="animation-duration: 3s;">
+                            <div class="p-1.5 bg-white/20 rounded-md">
+                                <span class="material-icons-round text-white text-base">task_alt</span>
+                            </div>
+                            <div>
+                                <p class="text-white/60 text-[8px] font-medium">Quality Work</p>
+                                <p class="text-white font-bold text-sm">100%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Content (Right) -->
+                    <div class="order-1 lg:order-2">
+                        <span
+                            class="inline-block text-teal-200 font-display font-bold text-xs tracking-widest uppercase mb-2">My
+                            Education</span>
+                        <h2 class="text-3xl lg:text-4xl font-display font-bold text-white mb-6">
+                            Academic <span class="text-primary">Journey</span>
+                        </h2>
+                        <p class="text-white/80 text-sm leading-relaxed mb-6 max-w-lg">
+                            A solid academic foundation has been pivotal in shaping my professional career. I have
+                            consistently strived for excellence in my studies, gaining deep knowledge in computer
+                            science and data analytics.
+                        </p>
+
+                        <!-- Education Cards Grid -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <!-- Post Graduation Box (Highest) -->
+                            <div
+                                class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-all group">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-white/20 flex items-center justify-center mb-2 text-primary">
+                                    <span class="material-icons-round text-lg text-white">workspace_premium</span>
+                                </div>
+                                <h3 class="font-bold text-white text-sm mb-1">Post Graduation</h3>
+                                <p class="text-xs text-white/70 group-hover:text-white/90">Master's Degree in Data
+                                    Science</p>
+                            </div>
+
+                            <!-- Graduation Box -->
+                            <div
+                                class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-all group">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-white/20 flex items-center justify-center mb-2 text-primary">
+                                    <span class="material-icons-round text-lg text-white">school</span>
+                                </div>
+                                <h3 class="font-bold text-white text-sm mb-1">Graduation</h3>
+                                <p class="text-xs text-white/70 group-hover:text-white/90">Bachelor's Degree in Computer
+                                    Science</p>
+                            </div>
+
+                            <!-- Resume QR Box -->
+                            <div
+                                class="col-span-2 bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-all group flex items-center gap-6">
+                                <!-- QR Code -->
+                                <div class="bg-white p-2 rounded-lg shrink-0">
+                                    <img src="assets/images/qr-placeholder.svg" alt="Resume QR"
+                                        class="w-20 h-20 object-contain">
+                                </div>
+
+                                <!-- Content -->
+                                <div>
+                                    <h3 class="font-bold text-white text-lg mb-1">My Resume</h3>
+                                    <p class="text-xs text-white/70 mb-3">Scan the QR code to view my resume instantly
+                                        on your device.</p>
+
+                                    <a href="#"
+                                        class="inline-flex items-center gap-2 text-primary hover:text-white transition-colors text-sm font-semibold group-hover:translate-x-1 duration-300">
+                                        <span class="material-icons-round text-lg">download</span>
+                                        If unable to scan, click here to download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Extra Skills Section (Duplicate of Services Box) -->
+        <div class="relative z-30 container mx-auto px-4 -mt-24 pb-12">
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 lg:p-8">
+                <!-- Header Section -->
+                <div class="mb-8 text-left">
+                    <span
+                        class="inline-block text-teal-600 font-display font-bold text-xs tracking-widest uppercase mb-2">Technical
+                        Proficiency</span>
+                    <h2 class="text-2xl lg:text-3xl font-display font-bold text-gray-900 dark:text-white mb-3">
+                        Tools & Technologies
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                        Expanding beyond academics, I have mastered specific tools and technologies to deliver
+                        exceptional results.
+                    </p>
+                </div>
+
+                <!-- Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Skill 1 -->
+                    <div
+                        class="feature-card p-4 rounded-xl transition-all duration-300 cursor-pointer group bg-gray-50 dark:bg-slate-700">
+                        <div
+                            class="icon-container w-10 h-10 rounded-lg flex items-center justify-center mb-3 transition-colors">
+                            <span class="material-icons-round text-xl transition-colors">code</span>
+                        </div>
+                        <h3 class="card-title text-base font-bold mb-1 transition-colors">Frontend Dev</h3>
+                        <p class="card-desc text-xs leading-relaxed transition-colors">
+                            HTML5, CSS3, JavaScript, React, Tailwind CSS for modern UIs.
+                        </p>
+                    </div>
+                    <!-- Skill 2 -->
+                    <div
+                        class="feature-card p-4 rounded-xl transition-all duration-300 cursor-pointer group bg-gray-50 dark:bg-slate-700">
+                        <div
+                            class="icon-container w-10 h-10 rounded-lg flex items-center justify-center mb-3 transition-colors">
+                            <span class="material-icons-round text-xl transition-colors">storage</span>
+                        </div>
+                        <h3 class="card-title text-base font-bold mb-1 transition-colors">Backend & DB</h3>
+                        <p class="card-desc text-xs leading-relaxed transition-colors">
+                            Node.js, Python, SQL, MongoDB for robust data handling.
+                        </p>
+                    </div>
+                    <!-- Skill 3 -->
+                    <div
+                        class="feature-card p-4 rounded-xl transition-all duration-300 cursor-pointer group bg-gray-50 dark:bg-slate-700">
+                        <div
+                            class="icon-container w-10 h-10 rounded-lg flex items-center justify-center mb-3 transition-colors">
+                            <span class="material-icons-round text-xl transition-colors">palette</span>
+                        </div>
+                        <h3 class="card-title text-base font-bold mb-1 transition-colors">Design Tools</h3>
+                        <p class="card-desc text-xs leading-relaxed transition-colors">
+                            Figma, Photoshop, Illustrator for creative assets.
+                        </p>
+                    </div>
+                    <!-- Skill 4 -->
+                    <div
+                        class="feature-card p-4 rounded-xl transition-all duration-300 cursor-pointer group bg-gray-50 dark:bg-slate-700">
+                        <div
+                            class="icon-container w-10 h-10 rounded-lg flex items-center justify-center mb-3 transition-colors">
+                            <span class="material-icons-round text-xl transition-colors">build</span>
+                        </div>
+                        <h3 class="card-title text-base font-bold mb-1 transition-colors">Other Skills</h3>
+                        <p class="card-desc text-xs leading-relaxed transition-colors">
+                            Git, Agile, MS Office, Data Analysis Tools.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DUPLICATE: Education Section (Full Width) -->
+        <div
+            class="relative w-full pt-20 pb-24 bg-gradient-to-br from-[#209499] to-[#0F5F64] dark:from-[#0D383A] dark:to-[#051F21] overflow-hidden">
+            <div class="absolute inset-0 bg-hero-pattern bg-[length:60px_60px] pointer-events-none"></div>
+            <div class="relative z-10 container mx-auto px-4">
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <!-- Column 1: Image (Left) -->
+                    <div class="relative h-[400px] lg:h-[500px] flex items-end justify-center order-2 lg:order-1">
+                        <img alt="My Education"
+                            class="relative z-10 h-full w-auto object-cover object-bottom rounded-3xl lg:bg-transparent"
+                            src="assets/images/education.svg" />
+                        <!-- Floating cards kept for consistency -->
+                        <div class="absolute top-8 left-6 z-20 glass-card p-2 rounded-lg flex items-center gap-2 animate-bounce"
+                            style="animation-duration: 3s;">
+                            <div class="p-1.5 bg-white/20 rounded-md">
+                                <span class="material-icons-round text-white text-base">task_alt</span>
+                            </div>
+                            <div>
+                                <p class="text-white/60 text-[8px] font-medium">Quality Work</p>
+                                <p class="text-white font-bold text-sm">100%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Content (Right) -->
+                    <div class="order-1 lg:order-2">
+                        <span
+                            class="inline-block text-teal-200 font-display font-bold text-xs tracking-widest uppercase mb-2">My
+                            Achievements</span>
+                        <h2 class="text-3xl lg:text-4xl font-display font-bold text-white mb-6">
+                            Professional <span class="text-primary">Certifications</span>
+                        </h2>
+                        <p class="text-white/80 text-sm leading-relaxed mb-6 max-w-lg">
+                            Validation of my expertise through industry-recognized certifications in data science and
+                            development.
+                        </p>
+
+                        <!-- Certification Cards Grid -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <!-- Cert 1 -->
+                            <div
+                                class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-all group">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-white/20 flex items-center justify-center mb-2 text-primary">
+                                    <span class="material-icons-round text-lg text-white">verified_user</span>
+                                </div>
+                                <h3 class="font-bold text-white text-sm mb-1">Web Development</h3>
+                                <p class="text-xs text-white/70 group-hover:text-white/90">Full Stack Certification -
+                                    Coursera</p>
+                            </div>
+
+                            <!-- Cert 2 -->
+                            <div
+                                class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-all group">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-white/20 flex items-center justify-center mb-2 text-primary">
+                                    <span class="material-icons-round text-lg text-white">analytics</span>
+                                </div>
+                                <h3 class="font-bold text-white text-sm mb-1">Data Analysis</h3>
+                                <p class="text-xs text-white/70 group-hover:text-white/90">Google Analytics Certificate
+                                </p>
+                            </div>
+
+                            <!-- Additional Cert Box -->
+                            <div
+                                class="col-span-2 bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-all group flex items-center gap-4">
+                                <div class="bg-white/20 p-2 rounded-lg shrink-0 text-primary">
+                                    <span class="material-icons-round text-2xl">workspace_premium</span>
+                                </div>
+
+                                <div>
+                                    <h3 class="font-bold text-white text-base mb-1">More Credentials</h3>
+                                    <p class="text-xs text-white/70 mb-0">Certified in Cloud Computing, UI/UX Design
+                                        basics, and Advanced Excel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DUPLICATE: Extra Skills Section (Duplicate of Services Box) -->
+        <div class="relative z-30 container mx-auto px-4 -mt-24 pb-12">
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 lg:p-8">
+                <!-- Header Section -->
+                <div class="mb-8 text-left">
+                    <span
+                        class="inline-block text-teal-600 font-display font-bold text-xs tracking-widest uppercase mb-2">My
+                        Work</span>
+                    <h2 class="text-2xl lg:text-3xl font-display font-bold text-gray-900 dark:text-white mb-3">
+                        Featured Projects
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                        A glimpse into some of the successful projects delivered to satisfied clients.
+                    </p>
+                </div>
+
+                <!-- Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Project 1 -->
+                    <div
+                        class="feature-card p-4 rounded-xl transition-all duration-300 cursor-pointer group bg-gray-50 dark:bg-slate-700 relative overflow-hidden">
+                        <!-- Hover Arrow (Top Right) -->
+                        <div
+                            class="absolute top-4 right-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="material-icons-round text-2xl text-white font-bold">arrow_forward</span>
+                        </div>
+
+                        <!-- Image Container -->
+                        <div class="mb-4 overflow-hidden rounded-lg h-40 bg-gray-100">
+                            <img src="assets/images/projects/ecommerce-app.svg" alt="E-Commerce App"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+
+                        <h3 class="card-title text-base font-bold mb-1 transition-colors">E-Commerce App</h3>
+                        <p class="card-desc text-xs leading-relaxed transition-colors">
+                            A full-stack React application with payment gateway integration.
+                        </p>
+                    </div>
+                    <!-- Project 2 -->
+                    <div
+                        class="feature-card p-4 rounded-xl transition-all duration-300 cursor-pointer group bg-gray-50 dark:bg-slate-700 relative overflow-hidden">
+                        <!-- Hover Arrow (Top Right) -->
+                        <div
+                            class="absolute top-4 right-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="material-icons-round text-2xl text-white font-bold">arrow_forward</span>
+                        </div>
+
+                        <!-- Image Container -->
+                        <div class="mb-4 overflow-hidden rounded-lg h-40 bg-gray-800">
+                            <img src="assets/images/projects/sales-dashboard.svg" alt="Sales Dashboard"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+
+                        <h3 class="card-title text-base font-bold mb-1 transition-colors">Sales Dashboard</h3>
+                        <p class="card-desc text-xs leading-relaxed transition-colors">
+                            Interactive data visualization dashboard using Python and D3.js.
+                        </p>
+                    </div>
+                    <!-- Project 3 -->
+                    <div
+                        class="feature-card p-4 rounded-xl transition-all duration-300 cursor-pointer group bg-gray-50 dark:bg-slate-700 relative overflow-hidden">
+                        <!-- Hover Arrow (Top Right) -->
+                        <div
+                            class="absolute top-4 right-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="material-icons-round text-2xl text-white font-bold">arrow_forward</span>
+                        </div>
+
+                        <!-- Image Container -->
+                        <div class="mb-4 overflow-hidden rounded-lg h-40 bg-amber-50">
+                            <img src="assets/images/projects/ngo-landing.svg" alt="NGO Landing Page"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+
+                        <h3 class="card-title text-base font-bold mb-1 transition-colors">NGO Landing Page</h3>
+                        <p class="card-desc text-xs leading-relaxed transition-colors">
+                            Responsive website redesign for a local non-profit organization.
+                        </p>
+                    </div>
+                    <!-- Project 4 -->
+                    <div
+                        class="feature-card p-4 rounded-xl transition-all duration-300 cursor-pointer group bg-gray-50 dark:bg-slate-700 relative overflow-hidden">
+                        <!-- Hover Arrow (Top Right) -->
+                        <div
+                            class="absolute top-4 right-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="material-icons-round text-2xl text-white font-bold">arrow_forward</span>
+                        </div>
+
+                        <!-- Image Container -->
+                        <div class="mb-4 overflow-hidden rounded-lg h-40 bg-slate-50">
+                            <img src="assets/images/projects/task-manager.svg" alt="Task Manager"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+
+                        <h3 class="card-title text-base font-bold mb-1 transition-colors">Task Manager</h3>
+                        <p class="card-desc text-xs leading-relaxed transition-colors">
+                            Productivity app built with Node.js and MongoDB.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

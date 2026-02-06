@@ -1,0 +1,20 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F8FAFC"/>
+  <rect x="50" y="50" width="140" height="200" rx="8" fill="white" stroke="#E2E8F0"/>
+  <rect x="210" y="50" width="140" height="200" rx="8" fill="white" stroke="#E2E8F0"/>
+  
+  <!-- Task Item 1 -->
+  <rect x="60" y="70" width="120" height="40" rx="4" fill="#FEF3C7" stroke="#FCD34D"/>
+  <rect x="65" y="80" width="10" height="10" rx="2" fill="#F59E0B"/>
+  <rect x="80" y="83" width="80" height="4" rx="2" fill="#78350F" fill-opacity="0.5"/>
+  
+  <!-- Task Item 2 -->
+  <rect x="60" y="120" width="120" height="40" rx="4" fill="#DBEAFE" stroke="#93C5FD"/>
+  <rect x="65" y="130" width="10" height="10" rx="2" fill="#3B82F6"/>
+  
+  <!-- Task Item 3 (Done) -->
+  <rect x="220" y="70" width="120" height="40" rx="4" fill="#DCFCE7" stroke="#86EFAC"/>
+  <rect x="225" y="80" width="10" height="10" rx="2" fill="#22C55E"/>
+  
+  <text x="140" y="280" font-family="sans-serif" font-size="14" fill="#64748B">Task Manager Mockup</text>
+</svg>
